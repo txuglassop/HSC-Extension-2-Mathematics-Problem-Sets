@@ -1,0 +1,1 @@
+A collection of free-to-use problem sets for various topics for HSC Extension II Mathematics. Questions are made by myself, unless otherwise stated. Each folder contains a pdf of the worksheet, and the LaTeX source code.
