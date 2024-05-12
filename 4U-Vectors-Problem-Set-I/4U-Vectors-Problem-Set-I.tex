@@ -1,0 +1,233 @@
+ \documentclass{article}
+
+\usepackage[english]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{4U Vectors Problem Set I}
+\author{Tadhg XG}
+\date{2024}
+
+\begin{document}
+\maketitle
+* Note: $\lambda, \mu \in \mathbb{R}$ are used as free parameters throughout this problem set. \\
+
+\textbf{Q1.} For the following sets of points, find the vector equation of the line that goes through all points,
+\begin{enumerate}
+    \item[a.] (3, 2), (4, -1)
+    \item[b.] (15, -21, 4), (7, -2, -3)
+\end{enumerate}
+
+\textbf{Q2.} For the following sets of points, find the vector equation of the plane that goes through all points,
+\begin{enumerate}
+    \item[a.] (1, 2, 3), (4, 5, 6), (-1, -2, -3)
+    \item[b.] (7, 1, 1), (6, 1, 1), (-3, -2, 4)
+\end{enumerate}
+
+\textbf{Q3.} Explain whether the following two lines are the same or not. Check if your answer is correct by finding the Cartesian equations of both lines,
+
+$$
+\vec{r}_1 = 
+\begin{pmatrix}
+    3 \\ 2 \\ 1
+\end{pmatrix}
++ \lambda
+\begin{pmatrix}
+    -1 \\ 0 \\ 1
+\end{pmatrix}, \hspace{1cm}
+\vec{r}_2 = 
+\begin{pmatrix}
+    3 \\ 2 \\ 1
+\end{pmatrix}
++ \mu
+\begin{pmatrix}
+    4 \\ -2 \\ 3
+\end{pmatrix}
+$$
+
+\textbf{Q4.} Explain whether the following two planes are the same or not. Check if your answer is correct by finding the Cartesian equations of both planes (thinking about what two similar planes would have in common, and visualising this in 3D space around you might help!),
+$$
+\vec{r}_1 = 
+\begin{pmatrix}
+    1 \\ -1 \\ 1
+\end{pmatrix}
++ \lambda_1
+\begin{pmatrix}
+    3 \\ -2 \\ 4
+\end{pmatrix}
++ \mu_1
+\begin{pmatrix}
+    2 \\ 1 \\ -1
+\end{pmatrix}, \hspace{1cm}
+\vec{r}_2 = 
+\begin{pmatrix}
+    8 \\ -1 \\ 3
+\end{pmatrix}
++ \lambda_2
+\begin{pmatrix}
+    2 \\ 3 \\ -1
+\end{pmatrix}
++ \mu_2
+\begin{pmatrix}
+    -14 \\ 2 \\ -6
+\end{pmatrix}
+$$
+
+\textbf{Q5.} In \textbf{Q3} and \textbf{Q4}, we 'confirmed' our answers by finding the corresponding Cartesian equations for each parametric (vector) equations. Explain why this is a 'valid' method for checking our answer. \\
+
+\textbf{Q6.} Consider the following parametric equation of a sphere,
+$$
+\left|
+\vec{r}_1 - 
+\begin{pmatrix}
+    3 \\ -2 \\ 6
+\end{pmatrix}
+\right|
+= 3.
+$$
+\begin{enumerate}
+    \item[a.] Write down the centre and radius of the sphere, explaining how you deduced these values.
+    \item[b.] Write down the Cartesian equation of the sphere.
+    \item[c.] Now, consider the parametric equation of a second sphere,
+$$
+\left|
+\vec{r}_2 - 
+\begin{pmatrix}
+    2 \\ -1 \\ 0
+\end{pmatrix}
+\right|
+= 1.
+$$
+            Explain whether these two spheres intersect, and if so, deduce the point(s) where they intersect.
+\end{enumerate}
+
+\textbf{Q7.} Consider the following two lines,
+$$
+\vec{r}_1 = 
+\begin{pmatrix}
+    3 \\ 1 \\ 4
+\end{pmatrix}
++ \lambda
+\begin{pmatrix}
+    2 \\ -1 \\ 1
+\end{pmatrix}, \hspace{1cm}
+\vec{r}_2 = 
+\begin{pmatrix}
+    2 \\ -1 \\ 1
+\end{pmatrix}
++ \mu
+\begin{pmatrix}
+    -1 \\ 2 \\ 3
+\end{pmatrix}.
+$$
+Determine whether these two lines are skew by either showing them to be skew, or finding a point of intersection between the two lines. \\
+
+\textbf{Q8.} Consider the following two lines, for some unknown number $\alpha \in \mathbb{R},$
+$$
+\vec{r}_1 = 
+\begin{pmatrix}
+    2 \\ 9 \\ 13
+\end{pmatrix} + \lambda
+\begin{pmatrix}
+    1 \\ 2 \\ 3
+\end{pmatrix}, \hspace{1cm}
+\vec{r}_2 =
+\begin{pmatrix}
+    \alpha \\ 7 \\ -2
+\end{pmatrix} + \mu
+\begin{pmatrix}
+    -1 \\ 2 \\ -3
+\end{pmatrix}.
+$$
+Determine the value of $\alpha$ such that the two lines certainly intersect. \\
+
+\textbf{Q9.} Consider the following sphere, defined by the equation,
+$$
+\left|
+\vec{r} -
+\begin{pmatrix}
+    -2 \\ 4 \\ -1
+\end{pmatrix}
+\right| = 3\sqrt{15}.
+$$
+Determine whether the following points lie inside, on, or outside the sphere;
+\begin{enumerate}
+    \item[a.] (-4, -5, 6),
+    \item[b.] (-8, -1, -3),
+    \item[c.] (3, 1, 2).
+\end{enumerate}
+
+\textbf{Q10.} Consider the line $\mathcal{L}$ and the sphere $\mathcal{S},$ which are defined by the equations,
+\begin{center}
+    $\vec{r} = \begin{pmatrix}
+        -3 \\ 16 \\ -9
+    \end{pmatrix} + \lambda
+    \begin{pmatrix}
+        7 \\ -12 \\3
+    \end{pmatrix}$ \hspace{0.3cm}and\hspace{0.3cm} $(x-3)^2 + (y+4)^2 + (z+2)^2 =81$ 
+\end{center}
+respectively.
+Find the point(s) where $\mathcal{L}$ intersects with $\mathcal{S},$ given that the curves intersect. \\ 
+
+\begin{center}
+    \textbf{Challenge Questions} \\
+    These questions are still very important and relevant to the course (more so than previous questions!), just a step up from previous material. \\
+\end{center}
+
+\textbf{Q11.} Consider the following line $\mathcal{L}$ and the point $P$ which we will define as,
+$$
+\mathcal{L}: \vec{r} = 
+\begin{pmatrix}
+    -1 \\ 1 \\ 0
+\end{pmatrix} + \lambda
+\begin{pmatrix}
+    1 \\ 0 \\ 2
+\end{pmatrix}, \hspace{0.7cm}
+P(1,-1,1).
+$$
+\begin{enumerate}
+    \item[a.] Write down two coordinates $A$ and $B$ that lie on $\mathcal{L}.$
+    \item[b.] Find $\overrightarrow{AP}$ and $\overrightarrow{AB}.$
+    \item[c.] Denote $\overrightarrow{AP}=\vec{p}$ and $\overrightarrow{AB}=\vec{b}.$ Find $\text{proj}_{\vec{b}} \vec{p}.$
+    \item[d.] Thus, find the perpendicular distance $d$ from $P$ to the given line using $d = \left| \text{proj}_{\vec{b}} \vec{p} - \vec{p} \right|.$
+    \item[e.] Explain qualitatively what this distance represents. (What makes it important? What makes it different from some other distance from $P$ to a different point on the line?)
+\end{enumerate}
+
+\textbf{Q12.} Consider the following two lines,
+$$
+\vec{r}_1 = 
+\begin{pmatrix}
+    3 \\ -2 \\ 3
+\end{pmatrix} + \lambda
+\begin{pmatrix}
+    2 \\ -1 \\ 1
+\end{pmatrix}, \hspace{1cm}
+\vec{r}_2 = 
+\begin{pmatrix}
+    -2 \\ -2 \\ 4
+\end{pmatrix} + \mu
+\begin{pmatrix}
+    1 \\ 2 \\ 3
+\end{pmatrix}.
+$$
+\begin{enumerate}
+    \item[a.] Show these lines to be skew.
+    \item[b.] Thus, find the shortest distance between the two lines\footnote{This question is hard, and requires very good understanding of several concepts. However, it is essential for a full understanding of 4U Vectors - If you can get it, you're good :)}.
+\end{enumerate}
+
+\textbf{Q13.} Consider the vector $\vec{v}$ and the plane $\mathcal{P}$, which are defined for some $a,b,c,d \in \mathbb{R},$ 
+$$
+\vec{v} =
+\begin{pmatrix}
+    a \\ b \\ c
+\end{pmatrix} \hspace{0.7cm}
+\mathcal{P}: ax+by+cz=d,
+$$
+respectively.
+Show that $v$ is perpendicular to $\mathcal{P}.$
+
+\end{document}
