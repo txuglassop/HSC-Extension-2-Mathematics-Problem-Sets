@@ -1,1 +1,103 @@
+ \documentclass{article}
 
+\usepackage[english]{babel}
+
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{Complex Numbers Vectors Problem Set I}
+\author{Tadhg XG}
+\date{2024}
+
+\begin{document}
+
+\maketitle
+
+\textbf{Q1.} The curve of many loci can be found algebraically using the substitution $z=x+iy.$ However, it is essential and oftentimes easier to consider the geometric conditions and properties, as opposed to algebra. For the following questions, consider some fixed $z_1,z_2\in \mathbb{C}.$
+\begin{enumerate}
+    \item[a.] It can be shown that the locus represented by $|z-z_1| = |z-z_2|$ is a linear 
+    curve. 
+    \begin{enumerate}
+        \item[i.] Explain geometrically why, detailing the position and nature of the curve in relation to the numbers $z_1$ and $z_2.$
+        \item[ii.] Plot the locus represented by $|z+3+2i|=|z-1+4i|.$
+    \end{enumerate}
+    \item[b.] It can be shown that the locus of the form $\text{arg}(z-z_1)=\theta,$ for some $\theta \in (-\theta, \theta]$ is a ray.
+    \begin{enumerate}
+        \item[i.] Explain geometrically why, making specific note why there is an 'open circle' in our ray.
+        \item[ii.] Sketch $\text{arg}(z+3-2i)=\frac{\pi}{4}.$
+    \end{enumerate}
+    \item[c.] It can be shown that the locus of the form $|z-z_1|=r,$ for some $r\in\mathbb{R},$ is a circle.
+    \begin{enumerate}
+        \item[i.] Explain geometrically why, making specific reference to what the values $z_1$ and $r$ represent.
+        \item[ii.] Sketch $|z-3+2i|=3.$
+    \end{enumerate}
+    \item[d.] It can be shown that the locus represented by $\text{arg}(\frac{z-z_1}{z-z_2})=\theta$ represents an arc, for some $\theta \in (-\pi, \pi] \backslash \{0, \pi \} \footnote{Scary notation!!! This is just any principal argument for $\theta$, not including 0 and $\pi$ (why?).}.$
+    \begin{enumerate}
+        \item[i.] Explain why, and note when the curve is a minor arc, a major arc, and a semicircle, noting whether the points $z_1$ and $z_2$ are open or closed 'circles.'
+        \item[ii.] Sketch $\text{arg}(\frac{z-3+2i}{z+2+i})=\frac{\pi}{2}, \text{arg}(\frac{z-2+i}{z+4+3i})=\frac{\pi}{6} \text{ and } \text{arg}(\frac{z-1-i}{z+1+i})=\frac{2\pi}{2}.$
+    \end{enumerate}
+    \item[e.] Nearly there! We have two special cases for the above; when $\theta \in \{ 0, \pi \}.$
+    \begin{enumerate}
+        \item[i.] Explain what the the curve will be when $\theta = 0.$ Then, sketch $\text{arg}(\frac{z+2-3i}{z-3+2i}) = 0.$
+        \item[ii.] Explain what the the curve will be when $\theta = \pi.$ Then, sketch $\text{arg}(\frac{z+2-3i}{z-3+2i}) = \pi.$
+    \end{enumerate}
+\end{enumerate}
+
+\textbf{Q2.} Consider $z\in \mathbb{C}.$
+\begin{enumerate}
+    \item[a.] Plot the set of points that satisfy the equation $|z-3+2i|=1.$
+    \item[b.] Find the maximum and minimum value of $|z|.$
+    \item[c.] Find the maximum and minimum value of $|z+4-3i|.$
+    \item[d.] Find the maximum and minimum value of $\text{arg}(z).$
+    \item[e.] Find the maximum and minimum value of $\text{arg}(z+4-3i).$
+\end{enumerate}
+
+\textbf{Q3.} (Cambridge)
+\begin{enumerate}
+    \item[a.] Consider $z_1, z_2, z_3 \in \mathbb{C}.$ Prove that $z_1, z_2$ and $z_3$ are collinear if, $$\frac{z_3-z_1}{z_2-z_1}\in \mathbb{R}.$$
+    \item[b.] Thus, show that the points represented by the complex numbers $5+8i, 13+20i$ and $19+29i$ are collinear.
+\end{enumerate}
+
+\textbf{Q4.} Consider some $z\in \mathbb{C}$ that satisfies the equations, $\text{arg}(\frac{z-3}{z-3i})=\frac{\pi}{2}$ and $\text{arg}(z)=\frac{\pi}{4}.$ Using geometrical methods, find $z.$ \\
+
+\textbf{Q5.}\footnote{This is hardly a vectors question but oh well still a good question!} Let $z = e^{i\theta},$ where $\theta \in (-\pi,\pi].$ Show that,
+$$\frac{z^2-1}{2iz} = \sin{(\theta)}.$$ \\
+
+\textbf{Q6.} Suppose $z\in \mathbb{C}$ satisfies the equation,
+$$
+\text{arg}\left( \frac{z-1+i}{z-1-i} \right) = \frac{\pi}{2}.
+$$
+Find the maximum and minimum values of both $|z|$ and $\text{arg}(z).$ \\
+
+\textbf{Q7.} Suppose $z \in \mathbb{C}$ satisfies the equation,
+$$
+\left| z - 5 + 4i\right| \le 3, \hspace{0.6cm} 
+$$
+Find the possible values $\text{arg}(z)$ can take (leave your answer in exact form). \\
+
+\textbf{Q8.} (HSC 2011) On an Argand diagram, sketch the region described by the inequality,
+$$\left|1 + \frac{1}{z} \right| \le 1.$$
+
+\textbf{Q9.} On the Argand diagram, sketch the region defined by the inequalities,
+$$
+\text{Re}(z) \ge 0, \hspace{0.4cm} 0 \le \text{Im}(z) \le 1, \hspace{0.4cm} |z| \le 1, \hspace{0.4cm} -\frac{\pi}{4} \le \text{arg}(z) \le \frac{\pi}{4}.
+$$
+Ensure you are explicit with the boundaries of the region (open and closed circles!). \\
+
+\textbf{Q10.} Let $z_1, z_2, z_3 \in \mathbb{C}$ be complex numbers that are equally spaced apart on the unit circle and ordered anticlockwise in the Argand diagram.
+\begin{enumerate}
+    \item[a.] If the points represented by each complex number are the vertexes of a shape, describe the shape formed by $z_1, z_2, z_3.$
+    \item[b.] Explain why $z_2 = \left( \frac{1}{2} + \frac{\sqrt{3}}{2}i \right) z_1.$
+    \item[c.] Hence, show that
+    $$
+    \frac{z_1-z_2}{z_3-z_2} = \frac{1}{2} + \frac{\sqrt{3}}{2}i.
+    $$
+    \item[d.] Explain geometrically why the result in part c is holds. You may find drawing a diagram to be helpful.
+\end{enumerate}
+
+ 
+\end{document}
